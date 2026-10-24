@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="6dp">
+
+    <!-- Battery Percentage -->
+    <TextView
+        android:id="@+id/widget_battery_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="%85"
+        android:textColor="#00E676"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Center Info Column -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!-- Status / App Title -->
+        <TextView
+            android:id="@+id/widget_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="Deşarj Ediliyor"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <!-- Remaining Time or Charging Wattage -->
+        <TextView
+            android:id="@+id/widget_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="Kalan: 14.5 sa"
+            android:textColor="#94A3B8"
+            android:textSize="10sp" />
+
+        <!-- Optional Live Charging Power -->
+        <TextView
+            android:id="@+id/widget_power_watt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="⚡ 18.5W • Hızlı Şarj"
+            android:textColor="#00E5FF"
+            android:textSize="9sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Right Temperature & Badge -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="32.5°C"
+            android:textColor="#FF9800"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:includeFontPadding="false"
+            android:text="VoltGuard"
+            android:textColor="#64748B"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+</LinearLayout>

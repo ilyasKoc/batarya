@@ -1,0 +1,6 @@
+{
+  "name": "VoltGuard",
+  "description": "Gelişmiş batarya takibi, kesintisiz arka plan koruması, donanım telemetrisi, Gemini AI Günlük Alışkanlık Koçu ve Uygulama Detoks Limitleri.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
